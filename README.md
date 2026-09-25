@@ -355,25 +355,25 @@ Fix — activate your Python virtual environment before running `pip install -r 
 
 Sign-in screen with the InsureSync AI healthcare workspace branding.
 
-![Login page](c:\Users\bmaru\Downloads\login-page.png)
+![Login page](<img width="1920" height="1200" alt="login-page" src="https://github.com/user-attachments/assets/dccf5c23-bc27-44c3-b4d8-cdb229d158ea" />)
 
 ### Health Profile
 
 Customers upload a bank statement, health report, and habits log to generate an ML-driven risk assessment across diabetes, hypertension, and heart disease.
 
-![Health profile & risk classifiers](c:\Users\bmaru\Downloads\health-profile.png)
+![Health profile & risk classifiers](<img width="1920" height="1200" alt="health-profile" src="https://github.com/user-attachments/assets/fef79a0c-629b-43c2-8501-31e1f021ad5b" />)
 
 ### Recommendations
 
 The IRS-ranked policy catalog with a fully expandable score ledger showing Coverage Fit, Benefits Match, Claim Reliability, and Premium Cost.
 
-![IRS-ranked recommendations](c:\Users\bmaru\Downloads\recommendations.png)
+![IRS-ranked recommendations](<img width="1920" height="1200" alt="recommendations" src="https://github.com/user-attachments/assets/b36240cd-cce5-46d8-9fc2-0b11b581ce67" />)
 
 ### Claims & Prior Authorization
 
 Real-time claim submission and status tracking dashboard.
 
-![Claims & prior authorization](c:\Users\bmaru\Downloads\claims-prior-auth.png)
+![Claims & prior authorization](<img width="1920" height="1200" alt="claims-prior-auth" src="https://github.com/user-attachments/assets/86630c65-ff7d-48be-ab93-0505100e2f69" />)
 
 ### Local Development Servers
 
@@ -382,13 +382,13 @@ Real-time claim submission and status tracking dashboard.
 <td width="50%">
 
 **Backend — FastAPI / Uvicorn**
-![Backend server startup](c:\Users\bmaru\Downloads\backend-server-startup.png)
+![Backend server startup](<img width="1332" height="375" alt="backend-server-startup" src="https://github.com/user-attachments/assets/748f97e0-2fb0-4cfa-b552-f3e978a11db8" />)
 
 </td>
 <td width="50%">
 
 **Frontend — Vite dev server**
-![Frontend dev server startup](c:\Users\bmaru\Downloads\frontend-dev-server.png)
+![Frontend dev server startup](<img width="1065" height="308" alt="frontend-dev-server" src="https://github.com/user-attachments/assets/b341595e-3799-407e-b739-b458f1877bc5" />)
 
 </td>
 </tr>
