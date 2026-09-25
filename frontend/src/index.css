@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c9d3d0 transparent;
+}
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #F6F5F1;
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+:focus-visible {
+  outline: 2px solid #17967F;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.eyebrow {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+/* Reusable button styles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: linear-gradient(180deg, #17967F 0%, #0F6B5C 100%);
+  color: white;
+  border-radius: 0.6rem;
+  padding: 0.65rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(14,30,51,0.08), 0 8px 20px -8px rgba(15,107,92,0.55);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+.btn-primary:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(14,30,51,0.1), 0 12px 24px -8px rgba(15,107,92,0.6);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+.btn-primary:disabled {
+  opacity: 0.6;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1px solid #E2E6E1;
+  color: #5B6B73;
+  border-radius: 0.6rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  background: white;
+}
+.btn-ghost:hover {
+  border-color: #17967F;
+  color: #093F36;
+  box-shadow: 0 2px 8px -4px rgba(23,150,127,0.25);
+}
+
+/* Card lift on hover */
+.card-hover {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(14,30,51,0.06), 0 16px 32px -16px rgba(14,30,51,0.18);
+  border-color: #C9D3D0;
+}
+
+/* Perforated ticket edge for the ScoreLedger */
+.ticket-notch {
+  position: relative;
+}
+.ticket-notch::before,
+.ticket-notch::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #F6F5F1;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.ticket-notch::before { left: -9px; }
+.ticket-notch::after { right: -9px; }
+
+.ticket-perf {
+  background-image: repeating-linear-gradient(
+    to right,
+    #E2E6E1 0,
+    #E2E6E1 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  height: 1px;
+}
